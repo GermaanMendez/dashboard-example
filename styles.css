@@ -1,0 +1,97 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: wheat;
+}
+body{
+    display: flex;
+}
+
+nav{
+    background-color: red;
+    width: 15%;
+    margin-left: 1%;
+}
+.leftNavTitle {
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: green;
+  }
+.leftNavTitle img {
+    width: 20%;
+    margin-right: 5%;
+  }
+
+.ulNav{
+    background-color: orange;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+  
+  .liNavItem {
+    margin-bottom: 5%;
+  }
+  .navOption {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: left;
+    color: #333;
+  }
+  .optionIcon {
+    width: 25px; /* Ancho del icono */
+    height: 25px; /* Alto del icono */
+    background-size: cover;
+    margin-right: 15px; /* Espacio entre el icono y el texto */
+  }
+  .optionIcon.home{
+    background-image: url('./assets/navAssets/home.png');
+  }
+.headerMaincontainer{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+.topHeaderContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+}
+.searchHeaderContainer{
+    margin: 0;
+    margin-left: 2%;
+    width: 70%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+}
+.searchHeaderContainer img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.searchHeaderContainer input{
+    width: 70%;
+    height: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.582);
+}
+
+
+
+main{
+    background-color: blueviolet;
+}
+
