@@ -88,10 +88,78 @@ header{
     border: none;
     background-color: rgba(128, 128, 128, 0.582);
 }
-
-
-
+.profileTopHeaderContainer{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+.notificationImgTopHeader{
+  margin-right: 30px;
+  width: 20px;
+  height: 20px;
+}
+.profileImgTopHeader{
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.downHeaderContainer{
+  display: flex;
+  background-color: greenyellow;
+}
+.profileDownHeaderContainer{
+  background-color: indianred;
+  margin-left: 2%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+}
+.profileDownHeaderContainer img{
+  width: 80px;
+  height: 80px;
+}
+.nameContainerDownHeader{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.nameContainerDownHeader h1,p{
+  margin: 0;
+}
+.buttonsContainerDownHeader{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: antiquewhite;
+  width: 30%;
+}
+.buttonsContainerDownHeader button{
+  background-color: greenyellow;
+  height: 50%;
+  width: 29%;
+  border-radius: 20px;
+}
 main{
+    margin-left: 1%;
+    display: flex;
     background-color: blueviolet;
 }
-
+main h2{
+  grid-column-start: 1;
+}
+.gridProjectsContainer{
+  background-color: aquamarine;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.gridProjectsContainer.cardProject{
+  grid-row-start: 2;
+}
+.gridNewsContainer{
+  background-color: azure;
+}
