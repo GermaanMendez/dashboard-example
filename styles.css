@@ -446,7 +446,7 @@ img:active {
     height: 100%;
   }
 }
-@media (min-width: 320px) and (max-width:375px)  {
+@media (min-width: 320px) and (max-width:376px)  {
   .leftNav {
     /* color: transparent; */
     width: 0px;
@@ -468,8 +468,9 @@ img:active {
   }
 
   #menuButton{
+    width: 20px;
     display: block;
-    text-align: end;
+    text-align: start;
   }
   *{
     font-size: 10px;
@@ -546,4 +547,103 @@ img:active {
     height: 20px;
   }
   
+}
+
+@media (min-width: 377px) and (max-width:426px) {
+  .leftNav {
+    width: 0px;
+    transition: width 1s ease-in-out;
+  }
+  #Privacy,
+  #Support{
+    color: transparent;
+  }
+  .expanded {
+    width: 150px; 
+  }
+  .show {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: none;
+  }
+  #menuButton{
+    width: 20px;
+    display: block;
+    text-align: start;
+  }
+  *{
+    font-size: 10px;
+  }
+  .headerMaincontainer{
+    width: 99%;
+  }
+  header{
+    height: 150px;
+  }
+  .searchHeaderContainer{
+    margin: 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .searchHeaderContainer img,
+  .profileTopHeaderContainer img{
+    height: 20px;
+  }
+  .searchHeaderContainer input{
+    height: 15px;
+    width: 60%;
+  }
+  .profileDownHeaderContainer img{
+    height: 30px;
+  }
+  .buttonsContainerDownHeader button{
+    height: 30px;
+    width: 50px;
+    margin-right: 5px;
+  }
+  .notificationImgTopHeader{
+    margin-right: 5px;
+  }
+  .searchHeaderContainer img{
+    height: 15px;
+    margin-right: 5px;
+}
+ 
+  li{
+    padding-bottom: 5px;
+  }
+  .optionIcon {
+    width: 13px; 
+    height: 13px; 
+    margin-right: 5px; 
+  }
+  main{
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .gridProjectsContainer{
+    justify-content: center;
+    grid-template-columns: 250px ;
+    row-gap: 20px;
+  }
+  .cardProject{
+    padding: 10px 10px 10px 10px;
+  }
+
+  .gridNewsContainer img{
+    height: 40px;
+  }
+  .gridNewsContainer h2{
+    font-size: 20px;
+  }
+  .gridProjectsContainer h2{
+    font-size: 20px;
+  }
+  .gridProjectsContainer img{
+    height: 20px;
+  }
 }
