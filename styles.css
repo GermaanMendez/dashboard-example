@@ -1,58 +1,63 @@
-/* Estilos generales para el scrollbar */
+/* ------------------------------------------------------------------------------ */
+/* -----------------------SCROLL BAR STYLES-------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* General styles */
 ::-webkit-scrollbar {
-    width: 8px; /* Ancho del scrollbar */
-    height: 50vh;
+    width: 10px; /* Ancho del scrollbar */
   }
-
-  /* Estilo del thumb (la parte desplazable del scrollbar) */
+/* Thumb styles */
   ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Color del thumb */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: #beeb6b; 
+    border-radius: 10px; 
   }
-  
-  /* Estilo del thumb cuando está en hover */
+  /* Hover styles */
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Cambio de color al pasar el mouse */
+    background-color: #439A97; 
   }
-  
-  /* Estilo de la barra de scroll */
+  /* Scroll bar styles */
   ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Color de fondo de la barra */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: #CBEDD5; 
+    border-radius: 10px; 
   }
-  
-  /* Estilo del botón de la barra de scroll */
   ::-webkit-scrollbar-button {
-    display: none; /* Ocultar el botón */
+    display: none; 
   }
 
 html,body{
+    margin: 0;
     height: auto;
-    width: 99%;
-    background-color: wheat;
+    width: 100%;
+    background-color: #9BE8D8;
+    color: #002B5B;
+    font-weight: bold;
 }
 body{
     display: flex;
     height: 100%;
 }
-
+#prueba{
+  display: none;
+}
+/* ------------------------------------------------------------------------------ */
+/* -----------------------LEFT NAV BAR STYLES-------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 nav{
-    background-color: red;
+    padding-top: 1%;
     width: 18%;
-    margin-left: 1%;
+    margin-left: 2%;
+    color: #002B5B;
+    border-right: 1px solid #E2F6CA;
 }
 .leftNav{
     position: sticky;
     top: 0;
     height: 100vh;
-    background-color: red;
 }
 .leftNavTitle {
     margin: 0;
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: green;
   }
 .leftNavTitle img {
     width: 20%;
@@ -60,7 +65,6 @@ nav{
   }
 
 .ulNav{
-    background-color: orange;
     list-style-type: none;
     padding: 0;
     margin-top: 10%;
@@ -75,55 +79,53 @@ nav{
     align-items: center;
     text-decoration: none;
     justify-content: left;
-    color: #333;
+    color: #002B5B;
+    font-weight: bold;
+    font-size: larger;
   }
   .optionIcon {
-    width: 25px; /* Ancho del icono */
-    height: 25px; /* Alto del icono */
+    width: 25px; 
+    height: 25px; 
     background-size: cover;
-    margin-right: 15px; /* Espacio entre el icono y el texto */
-  }
-  .optionIcon.home{
-    background-image: url('./assets/navAssets/home.png');
+    margin-right: 15px; 
   }
 
+/* ------------------------------------------------------------------------------ */
+/* -----------------------HEADER STYLES-------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 .headerMaincontainer{
+    margin: 0;
     position: sticky;
-    background-color: #333;
     width: 85%;
-    /* height: auto; */
     display: flex;
     flex-direction: column;
 }
 header{
     position: sticky;
     top: 0;
-    height: 100vh;
-    background-color: red;
-    background-color: yellow;
+    background-color: #9BE8D8;
     display: flex;
     flex-direction: column;
     height: 200px;
+    width: 100%;
     justify-content: space-evenly;
+    box-shadow: 0 2px 14px 0 rgb(0 0 0 / 10%);
 }
 
 .topHeaderContainer{
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: orange;
 }
 .searchHeaderContainer{
     margin: 0;
     margin-left: 2%;
     width: 70%;
-    background-color: green;
     display: flex;
     align-items: center;
 }
 .searchHeaderContainer img{
-    width: 30px;
-    height: 35px;
+    height: 30px;
     margin-right: 20px;
 }
 .searchHeaderContainer input{
@@ -132,14 +134,14 @@ header{
     border-radius: 20px;
     outline: none;
     border: none;
-    background-color: rgba(128, 128, 128, 0.582);
+    background-color: #8FE3CF;
+    outline: 1px solid #62b6b779;
 }
 .profileTopHeaderContainer{
   width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
 }
 .notificationImgTopHeader{
   margin-right: 30px;
@@ -153,25 +155,21 @@ header{
 }
 .downHeaderContainer{
   display: flex;
-  background-color: greenyellow;
 }
 .profileDownHeaderContainer{
-  background-color: indianred;
   margin-left: 2%;
   width: 55%;
   display: flex;
   align-items: center;
 }
 .profileDownHeaderContainer img{
-  width: 80px;
-  height: 80px;
+  height: 90px;
 }
 .nameContainerDownHeader{
   margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 .nameContainerDownHeader h1,p{
   margin: 0;
@@ -180,51 +178,55 @@ header{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: antiquewhite;
   width: 30%;
 }
 .buttonsContainerDownHeader button{
-  background-color: greenyellow;
   height: 50%;
   width: 29%;
   border-radius: 20px;
+  border: none;
+  background-color: #8FE3CF;
+  color: #002B5B;
+  box-shadow: 10px 10px 20px 0 rgb(0 0 0 / 10%);
+  border:1px solid #022f630a; ;
 }
+
+/* ------------------------------------------------------------------------------ */
+/* -----------------------MAIN CONTENT STYLES-------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 main{
     margin-top: 30px;
     width:98%;
     margin-left: 2%;
     display: flex;
-    background-color: blueviolet;
     justify-content: space-between;
 }
 main h2{
     margin: 30px 0 0;
+    font-size: 30px;
 }
 .gridProjectsContainer{
-  background-color: aquamarine;
   width: 90%;
   display: grid;
-  grid-template-columns: 450px 450px;
+  grid-template-columns: 400px 400px;
   grid-auto-rows: auto; 
   column-gap: 60px;
   row-gap: 20px;
+  border-right: 1px solid #E2F6CA;
 }
-.gridTitle{
-    background-color: blanchedalmond;
-    grid-row: span 1; 
-}
+
 .cardProject.first{
-    background-color: red;
     grid-column-start: 1;
 }
 .cardProject{
-    background-color: beige;
     border-radius: 10px;
-    border-left: 10px solid saddlebrown; 
+    border:1px solid #022f630a; ;
+    border-left: 10px solid #002B5B; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 30px 50px 30px 50px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
 }
 .gridProjectsContainer > :not(.gridTitle) {
     grid-row: span 2;
@@ -233,37 +235,39 @@ main h2{
 .cardProject p{
     margin: 0 auto;
     width: 100%;
-    background-color: goldenrod;
     margin-top: 20px;
 }
 .cardProject img{
     margin: 20px 5px 0 0;
 }
 
-
 .buttonsCardContainer{
     display: flex;
     justify-content: end;
 }
 .buttonsCardContainer img{
-    height: 25px;
+    height: 28px;
     margin-left: 20px;
 }
+
+/* ------------------------------------------------------------------------------ */
+/* -----------------------ANNOUNCEMENTS STYLES-------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 .gridNewsContainer{
-  background-color: azure;
   display: flex;
   flex-direction: column;
 }
-.gridNewsContainer h3{
+.gridNewsContainer h2{
     width: 80%;
     margin: 0 auto;
     margin-top: 30px;
-    background-color: red;
+    font-size: 30px;
   }
 .announcementsContainer{
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+  border:1px solid #022f630a; ;
     margin: 0 auto;
     margin-top: 20px;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,23 +278,28 @@ main h2{
 
 .divNew{
     margin-top: 20px;
-    background-color: green;
     border-bottom: 1px solid beige;
     width: 80%;
 }
 .divNew h4{
    margin: 5px 0 5px 0;
 }
+.divNew p{
+  margin-bottom: 10px;
+}
 .divNew img{
     height: 70px;
  }
 
- /* TRENDING */
+/* ------------------------------------------------------------------------------ */
+/* -----------------------TRENDING STYLES-------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 
   .trendingsContainer{
+      box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+      border:1px solid #022f630a; ;
       margin: 0 auto;
       margin-top: 20px;
-      background-color: yellow;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -302,11 +311,239 @@ main h2{
   .divNew.divTrending{
       display: flex;
       align-items: center;
-      background-color: brown;
   }
 .trendingNewText{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 20px;
+}
+.trendingNewText p{
+  margin-top: 3px;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* -----------------------BUTTONS AND IMG. HOVER AND ACTIVE STYLES--------------- */
+/* ------------------------------------------------------------------------------ */
+button:hover{
+  cursor: pointer;
+  box-shadow: 10px 10px 5px 0 rgb(0 0 0 / 15%);
+  border:1px solid #022f630a; 
+}
+button:active,
+li:active,
+img:active {
+  transform: translateY(3px); 
+}
+.cardProject img:hover{
+  cursor: pointer;
+  box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 10%);
+}
+
+
+
+@media (min-width: 2000px)  {
+  *{
+    font-size: 20px;
+  }
+  .gridProjectsContainer{
+    grid-template-columns: 600px 600px;
+    column-gap: 150px;
+    row-gap: 60px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width:1400px)  {
+  *{
+    font-size: 15px;
+  }
+  .gridProjectsContainer{
+    grid-template-columns: 300px 300px;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+  .gridNewsContainer img{
+    height: 45px;
+  }
+  .gridNewsContainer h2{
+    font-size: 25px;
+  }
+  .gridProjectsContainer h2{
+    font-size: 25px;
+  }
+  .gridProjectsContainer img{
+    height: 20px;
+  }
+  .optionIcon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 15px; 
+  }
+  header{
+    height: 170px;
+  }
+  .searchHeaderContainer img,
+  .profileTopHeaderContainer img{
+    height: 30px;
+  }
+  .searchHeaderContainer input{
+    height: 20px;
+  }
+  .profileDownHeaderContainer img{
+    height: 40px;
+  }
+  .buttonsContainerDownHeader button{
+    height: 100%;
+  }
+}
+
+@media (min-width: 750px) and (max-width:1099px)  {
+  .trending{
+    margin-left: 20px;
+  }
+  *{
+    font-size: 15px;
+  }
+  .gridProjectsContainer{
+    grid-template-columns: 400px ;
+    row-gap: 40px;
+  }
+  .gridNewsContainer{
+    margin-top: 20px;
+  }
+  .gridNewsContainer img{
+    height: 45px;
+  }
+  .gridNewsContainer h2{
+    font-size: 25px;
+  }
+  .gridProjectsContainer h2{
+    font-size: 25px;
+  }
+  .gridProjectsContainer img{
+    height: 20px;
+  }
+  .optionIcon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 15px; 
+  }
+  header{
+    height: 170px;
+  }
+  .searchHeaderContainer img,
+  .profileTopHeaderContainer img{
+    height: 30px;
+  }
+  .searchHeaderContainer input{
+    height: 20px;
+  }
+  .profileDownHeaderContainer img{
+    height: 40px;
+  }
+  .buttonsContainerDownHeader button{
+    height: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width:375px)  {
+  .leftNav {
+    /* color: transparent; */
+    width: 0px;
+    transition: width 1s ease-in-out;
+  }
+  #Privacy,
+  #Support{
+    color: transparent;
+  }
+  .expanded {
+    width: 300px; /* Ancho aumentado al aplicar la clase "expanded" */
+  }
+  
+  .show {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: none;
+  }
+
+  #menuButton{
+    display: block;
+    text-align: end;
+  }
+  *{
+    font-size: 10px;
+  }
+  .headerMaincontainer{
+    width: 99%;
+  }
+  header{
+    height: 150px;
+  }
+  .searchHeaderContainer{
+    margin: 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .searchHeaderContainer img,
+  .profileTopHeaderContainer img{
+    height: 15px;
+  }
+  .searchHeaderContainer input{
+    height: 10px;
+    width: 60%;
+  }
+  .profileDownHeaderContainer img{
+    height: 25px;
+  }
+  .buttonsContainerDownHeader button{
+    height: 20px;
+    width: 38px;
+    margin-right: 1px;
+  }
+  .notificationImgTopHeader{
+    margin-right: 5px;
+  }
+  .searchHeaderContainer img{
+    height: 15px;
+    margin-right: 5px;
+}
+ 
+  li{
+    padding-bottom: 5px;
+  }
+  .optionIcon {
+    width: 13px; 
+    height: 13px; 
+    margin-right: 5px; 
+  }
+  main{
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .gridProjectsContainer{
+    justify-content: center;
+    grid-template-columns: 200px ;
+    row-gap: 20px;
+  }
+  .cardProject{
+    padding: 10px 10px 10px 10px;
+  }
+
+  .gridNewsContainer img{
+    height: 40px;
+  }
+  .gridNewsContainer h2{
+    font-size: 20px;
+  }
+  .gridProjectsContainer h2{
+    font-size: 20px;
+  }
+  .gridProjectsContainer img{
+    height: 20px;
+  }
+  
 }
