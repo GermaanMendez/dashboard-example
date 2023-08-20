@@ -4,6 +4,7 @@ function inicio() {
     const navbar2 = document.getElementById('leftNav');
     const P_privacy = document.getElementById('Privacy');
     const P_Support = document.getElementById('Support');
+    const P_Settings = document.getElementById('Settings');
     const closeMenuButton = document.getElementById('dashboardimg');
             	        closeMenuButton.addEventListener('click',closeMenu)
     // navbar2.classList.add('german');
@@ -15,6 +16,7 @@ function inicio() {
             element.classList.toggle('expanded');
             P_privacy.style.color='#002B5B'
             P_Support.style.color = '#002B5B'
+            P_Settings.style.color = '#002B5B'
             menuButton.style.display = 'none';
         }
          function closeMenu() {
@@ -23,8 +25,9 @@ function inicio() {
              menuButton.style.display = 'block';
              setTimeout(() => {
                 P_privacy.style.color='transparent'
-                P_Support.style.color = 'transparent'
-             }, 800);
+                 P_Support.style.color = 'transparent'
+                 P_Settings.style.color = 'transparent'
+             }, 400);
         }
           
 }
